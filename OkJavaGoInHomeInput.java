@@ -4,17 +4,24 @@ import org.opentutorials.iot.Lighting;
 //Elevator라는 클래스를 불러오는 것이다.
 import org.opentutorials.iot.Security;
 import java.lang.String;
-import javax.swing.JOptionPane;
 
 public class OkJavaGoInHomeInput {
 
     public static void main(String[] args) {
+
+        String[] myArr = { "Java APT 404", "50" };
+
+        OkJavaGoInHomeInput JavaInput = new OkJavaGoInHomeInput();
+        JavaInput.go(myArr);
+    }
+
+    private void go(String[] args) {
         // args 파라미터 = 매개변수라고 한다.
 
-        String id = JOptionPane.showInputDialog("Enter a ID");
+        String id = args[0];
         // 입력 할떄까지 멈춰 있는다. 사용자의 입력값에 따라서 다르게 작동한다.
 
-        String bright = JOptionPane.showInputDialog("Enter a Bright level");
+        String bright = args[1];
 
         // Elevator call
         Elevator myElevator = new Elevator(id); // 자바 아파트의 엘리베이터가 new~ 이다.
