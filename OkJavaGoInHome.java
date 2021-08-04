@@ -26,5 +26,7 @@ public class OkJavaGoInHome {
 
         Lighting floorLamp = new Lighting( id + " / floorLamp");
         floorLamp.on();
+
+        //https://opentutorials.org/module/4294/26661 수업 주소
     }
 }
