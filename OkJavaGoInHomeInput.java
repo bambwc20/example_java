@@ -8,14 +8,11 @@ import java.lang.String;
 public class OkJavaGoInHomeInput {
 
     public static void main(String[] args) {
-
         String[] myArr = { "Java APT 404", "50" };
-
-        OkJavaGoInHomeInput JavaInput = new OkJavaGoInHomeInput();
-        JavaInput.go(myArr);
+        OkJavaGoInHomeInput.go(myArr);
     }
 
-    private void go(String[] args) {
+    private static void go(String[] args) {
         // args 파라미터 = 매개변수라고 한다.
 
         String id = args[0];
