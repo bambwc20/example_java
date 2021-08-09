@@ -4,11 +4,20 @@ import org.opentutorials.iot.Lighting;
 //Elevator라는 클래스를 불러오는 것이다.
 import org.opentutorials.iot.Security;
 import java.lang.String;
+import java.io.Console;
 
 public class OkJavaGoInHomeInput {
 
     public static void main(String[] args) {
-        String[] myArr = { "Java APT 404", "50" };
+        String aptname = "";
+        String bright = "";
+
+        Console console = System.console();
+
+        aptname = console.readLine("%s", "아파트 이름 : ");
+        bright = console.readLine("%s", "현관 밝기 : ");
+
+        String[] myArr = { aptname, bright };
         OkJavaGoInHomeInput.go(myArr);
     }
 
